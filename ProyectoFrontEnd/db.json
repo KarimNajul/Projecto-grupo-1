@@ -2,45 +2,143 @@
   "products": [
     {
       "id": 1,
-      "name": "Sillon dos cuerpos",
-      "description": "Sillon de dos cuerpo de pana",
-      "price": 120,
-      "image": "./image/Foto1.jpg"
+      "name": "Sillon de dos cuerpos",
+      "description": "Sillon de dos cuerpo tela a eleccion.Alta dencidad, patas metalicas; no incluye almohadones",
+      "price": 500,
+      "image": "./image/Foto1.png"
     },
     {
       "id": 2,
-      "name": "Comoda Vertical",
-      "description": "Comoda de melamina con cajones",
+      "name": "Chifonier con puertas",
+      "description": "Chifonier de melamina.Colores a eleccion, tres puertas con compartimiento de guardado y estantes",
       "price": 120.8,
-      "image": "./image/Foto2.jpg"
+      "image": "./image/Foto2.png"
     },
     {
       "id": 3,
       "name": "Sillon L",
-      "description": "Sillon en L de pana",
-      "price": 120,
-      "image": "./image/Foto3.jpg"
+      "description": "Sillon en L.Tela a eleccion, patas de madera, tres cuerpos",
+      "price": 530,
+      "image": "./image/Foto3.png"
     },
     {
       "id": 4,
-      "name": "Rack para TV",
-      "description": "Rack de melamina para Tv",
-      "price": 120,
-      "image": "./image/Foto4.jpg"
+      "name": "Rack TV",
+      "description": "Rack de melamina para Tv.Colores a eleccion. Tres compartimientos de guardado con puertas, estantes. Moderno",
+      "price": 200,
+      "image": "./image/Foto4.png"
     },
     {
       "id": 5,
-      "name": "Sillas de caña",
-      "description": "Sillas de caña",
-      "price": 120,
-      "image": "./image/Foto5.jpg"
+      "name": "Sillas Vintage",
+      "description": "Juego  de sillones vintage con mesa.No incluye almohadones. El juego consiste en un sillon de un cuerpon, uno de dos cuerpos y mesa redonda con tapa de vidrio",
+      "price": 400,
+      "image": "./image/Foto5.png"
     },
     {
       "id": 6,
-      "name": "Estanteria de melamina cajoneras",
-      "description": "Estanteria de melamina con dos cajoneras",
+      "name": "Modolus Infantin",
+      "description": "El equipamiento consiste en un estanteria con 3 compartimientos mas sector de guardado con tapa, mas modulo cuadrado con puerta. En colores pasteles",
+      "price": 150,
+      "image": "./image/Foto6.png"
+    },
+    {
+      "id": 7,
+      "name": "Rack TV",
+      "description": "Combinaciones a eleccion(haya-blanco,blanco-haya,negro-blanco,blanco-negro). La estanteria principal puede colocarse en cualquiera de sus extremos.No incluye objeto de decoracion",
+      "price": 400,
+      "image": "./image/Foto7.png"
+    },
+    {
+      "id": 8,
+      "name": "Estanteria moderna",
+      "description": "Excelente estanteria con varios compartimientos ideal para vestir un ambiente.Colores a eleccion disponibles:tiza, negro, haya y nogal.No incluye objetos de decoracion",
+      "price": 250,
+      "image": "./image/Foto8.png"
+    },
+    {
+      "id": 9,
+      "name": "Mesa de luz moderna ",
+      "description": "Mesa de luz moderna.Dos espacios de guardado, colores a eleccion, tirajes metalicos color mate.No incluye objeto de decoracion",
+      "price": 100,
+      "image": "./image/Foto9.png"
+    },
+    {
+      "id": 10,
+      "name": "Mueble Recepcion",
+      "description": "Mueble ideal para el ingreso del hogar. Consta de dos espacios de guardado con puerta, butaca de apoyo, cuatro percheros.Colores a eleccion",
+      "price": 180,
+      "image": "./image/Foto10.png"
+    },
+    {
+      "id": 11,
+      "name": "Mesa ratona",
+      "description": "Moderna mesa ratona con tapa de vidrio conbinada con melamina, ideal para ser el protagonista de su living. Colores a eleccion",
+      "price": 300,
+      "image": "./image/Foto11.png"
+    },
+    {
+      "id": 12,
+      "name": "Escritorio con alzada",
+      "description": "Excelente escritorio de lineas modernas en melamina de muy buena calidad, esta compuesto con una alzada para guardado y estantes en su parte inferior",
+      "price": 180,
+      "image": "./image/Foto12.png"
+    },
+    {
+      "id": 13,
+      "name": "Panel TV",
+      "description": "Panel para tv moderno. Posee dos estantes de alta resistencia. Las combinaciones, colores quedan a criterio del comprador.El panel posee los cortes/abertures para cableado. Terminacion en mate",
+      "price": 240,
+      "image": "./image/Foto13.png"
+    },
+    {
+      "id": 14,
+      "name": "Comoda",
+      "description": "Comoda con nueve cajones amplios y un espacio libre de guardado.Combinacion a eleccion del comprador.Tirajes metalicos con acabado mate",
+      "price": 200,
+      "image": "./image/Foto14.png"
+    },
+    {
+      "id": 15,
+      "name": "Mesa de luz",
+      "description": "Mesa de luz de diseño lineas simples con dos espacios de guardado con puertas",
       "price": 120,
-      "image": "./image/Foto6.jpg"
+      "image": "./image/Foto15.png"
+    },
+    {
+      "id": 16,
+      "name": "Rack TV",
+      "description": "Imponente rack para TV.Posee dos espacios de guardado con puerta y 4 estantes.Ideal para ambientes amplios.Colores y combinaciones a disposicion",
+      "price": 300,
+      "image": "./image/Foto16.png"
+    },
+    {
+      "id": 17,
+      "name": "Rack TV",
+      "description": "Moderno sistema de rack, donde la conjuacion de los modulos parten de la creatividad del comprador. Esta compuesto por 8 gabinetes con puertas y tirajes metalicos. Los colores son a eleccion, asi como tambien el acabado que puede ser brillante, mate u opaco",
+      "price": 300,
+      "image": "./image/Foto17.png"
+    },
+    {
+      "id": 18,
+      "name": "Rack TV",
+      "description": "Rack de lineas simples compuestos por 6 modulos que puden disponerse segun el criterio del comprador (apto para apoyo, colgar). Diseño innovador. Los colores son a eleccion asi como tambien son sus terminaciones",
+      "price": 310,
+      "image": "./image/Foto18.png"
+    },
+    {
+      "id": 19,
+      "name": "Rack TV",
+      "description": "Simple rack para TV moderno. Ideal para espacios reducidos (se puede colgar). Esta compuestos con tres compartimientos (uno con puerta). Contiene los elementos para colgar TV (brazos, herrajes) y las aberturas para cableado",
+      "price": 250,
+      "image": "./image/Foto19.png"
+    },
+    {
+      "id": 20,
+      "name": "Bodega",
+      "description": "Imponente bodega diseñada con melamina de 15cm de espesor. Su diseño moderno la hace una verdadero mueble decorativo y de mucha utilidad.Tiene sector para colgar copas con la misma terminacion que el resto del mueble.Colores a disponibilidad",
+      "price": 180,
+      "image": "./image/Foto20.png"
     }
   ]
 }
