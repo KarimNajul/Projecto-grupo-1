@@ -1,54 +1,46 @@
 {
-    "products": [
-       {
-        "id":1,
-        "name":"Sillon dos cuerpos",
-        "description":"Sillon de dos cuerpo de pana",
-        "price": 120,
-        "image": "./image/Foto1.jpg"
-       },
-       {
-        "id":2,
-        "name":"Comoda Vertical",
-        "description":"Comoda de melamina con cajones",
-        "price": 120.8,
-        "image": "./image/Foto2.jpg"
-       },
-       {
-        "id":3,
-        "name":"Sillon L",
-        "description":"Sillon en L de pana",
-        "price": 120,
-        "image": "./image/Foto3.jpg"
-       },
-       {
-        "id":4,
-        "name":"Rack para TV",
-        "description":"Rack de melamina para Tv",
-        "price": 120,
-        "image": "./image/Foto4.jpg"
-       },
-       {
-        "id":5,
-        "name":"Sillas de caña",
-        "description":"Sillas de caña",
-        "price": 120,
-        "image": "./image/Foto5.jpg"
-       },
-       {
-        "id":6,
-        "name":"Estanteria de melamina cajoneras",
-        "description":"Estanteria de melamina con dos cajoneras",
-        "price": 120,
-        "image": "./image/Foto6.jpg"
-       }
-    
-    
-    
-    
-    
-    
-    
-    
-    ]
+  "products": [
+    {
+      "id": 1,
+      "name": "Sillon dos cuerpos",
+      "description": "Sillon de dos cuerpo de pana",
+      "price": 120,
+      "image": "./image/Foto1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Comoda Vertical",
+      "description": "Comoda de melamina con cajones",
+      "price": 120.8,
+      "image": "./image/Foto2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Sillon L",
+      "description": "Sillon en L de pana",
+      "price": 120,
+      "image": "./image/Foto3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Rack para TV",
+      "description": "Rack de melamina para Tv",
+      "price": 120,
+      "image": "./image/Foto4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Sillas de caña",
+      "description": "Sillas de caña",
+      "price": 120,
+      "image": "./image/Foto5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Estanteria de melamina cajoneras",
+      "description": "Estanteria de melamina con dos cajoneras",
+      "price": 120,
+      "image": "./image/Foto6.jpg"
+    }
+  ]
 }
