@@ -1,5 +1,13 @@
+import {Route, Routes} from 'react-router-dom'
 import './App.css'
-import Carousel from "./components/Carousel"
+import Carousel from "./components/Carousel";
+import NavBar from './components/NavBar';
+import Carrito from './components/Pages/Carrito';
+import Contactanos from './components/Pages/Contactanos';
+import Inicio from './components/Pages/Inicio';
+import Productos from './components/Pages/Productos';
+import QuienesSomos from './components/Pages/QuienesSomos';
+
 
 const slides = [
   "https://i.ibb.co/ncrXc2V/1.png", 
@@ -9,9 +17,31 @@ const slides = [
 ];
 
 function App() {
+  return(
+  
+  <div className="">
+    <NavBar/>
+    <Routes>
+      <Route path={"/"} element={<Inicio/>} />
+      <Route path={"/QuienesSomos"} element={<QuienesSomos/>} />
+      <Route path={"/Productos"} element={<Productos/>} />
+      <Route path={"/Contactanos"} element={<Contactanos/>} />
+      <Route path={"/Carrito"} element={<Carrito/>} />
+    </Routes>
+
+
+  </div>
   
 
-  return (
+  )
+
+
+
+
+}
+  
+
+  /*return (
     <>
       <div>
         <h1 className='font-bold underline text-red-700'>Hola mundo!</h1>
@@ -26,5 +56,5 @@ function App() {
     </>
   )
 }
-
+*/
 export default App
