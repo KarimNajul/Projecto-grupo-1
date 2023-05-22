@@ -1,6 +1,5 @@
 import './App.css'
 import Home from './pages/home'
-=======
 import Carousel from "./components/Carousel"
 
 const slides = [
@@ -18,14 +17,13 @@ function App() {
       <div>
         <h1 className='text-3xl font-bold underline'>Hola mundo!</h1>
         <Home></Home>
-=======
         <h1 className='font-bold underline text-red-700'>Hola mundo!</h1>
       </div>
       <div className= "max-w-lg">
       <Carousel>
-        {slides.map ((s) => (
+        {slides.map (s => {
           <img src={s} alt="Images" />
-        ))}
+        })}
       </Carousel>
       </div>
       
