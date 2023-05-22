@@ -8,9 +8,9 @@ const Home = () => {
         <div>
             <section>
                 <div className='grid grid-cols-5 gap-8'>
-                    {products.map((product) => (
+                    {products.map( (product) => (
                         <Product key={product.id} product={product} />
-                    ))}
+                        ))}
                 </div>
             </section>
         </div>
