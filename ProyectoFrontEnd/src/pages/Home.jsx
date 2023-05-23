@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <div>
             <section>
-                <div className='grid grid-cols-5 gap-8'>
+                <div className='grid grid-cols-4 gap-8 mx-auto max-w-screen-xl'>
                     {products.map( (product) => (
                         <Product key={product.id} product={product} />
                         ))}
