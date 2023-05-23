@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className='bg-orange-300'>
         <h1 className='text-3xl font-bold underline'>Hola mundo!</h1>
         <Home></Home>
         <h1 className='font-bold underline text-red-700'>Hola mundo!</h1>
