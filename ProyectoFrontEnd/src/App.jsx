@@ -1,5 +1,6 @@
 import {Route, Routes} from 'react-router-dom'
 import './App.css'
+
 import Carousel from "./components/Carousel";
 import NavBar from './components/NavBar';
 import Carrito from './components/Pages/Carrito';
@@ -7,6 +8,10 @@ import Contactanos from './components/Pages/Contactanos';
 import Inicio from './components/Pages/Inicio';
 import Productos from './components/Pages/Productos';
 import QuienesSomos from './components/Pages/QuienesSomos';
+
+
+import Home from './pages/home'
+import Carousel from "./components/Carousel"
 
 
 const slides = [
@@ -43,16 +48,19 @@ function App() {
 
   /*return (
     <>
-      <div>
+      <div className='bg-orange-300'>
+        <h1 className='text-3xl font-bold underline'>Hola mundo!</h1>
+        <Home></Home>
         <h1 className='font-bold underline text-red-700'>Hola mundo!</h1>
       </div>
       <div className= "max-w-lg">
       <Carousel>
-        {slides.map ((s) => (
+        {slides.map (s => {
           <img src={s} alt="Images" />
-        ))}
+        })}
       </Carousel>
       </div>
+      
     </>
   )
 }
