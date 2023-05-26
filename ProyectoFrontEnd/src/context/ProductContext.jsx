@@ -1,6 +1,6 @@
 import axios from "axios";
 import { createContext, useEffect, useState } from "react";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 export const ProductContext = createContext();
 
@@ -15,7 +15,6 @@ const ProductProvider = ({ children }) => {
       .catch((error) => console.log(error));
   }, []);
 
-
   return (
     <ProductContext.Provider value={{ products }}>
       {children}
@@ -24,7 +23,7 @@ const ProductProvider = ({ children }) => {
 };
 
 ProductProvider.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 export default ProductProvider;
