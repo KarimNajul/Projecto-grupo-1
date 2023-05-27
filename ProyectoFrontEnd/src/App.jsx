@@ -7,7 +7,7 @@ import QuienesSomos from "./pages/QuienesSomos";
 import Home from "./pages/Home.jsx";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-/*import Carousel from "./components/Carousel" */
+import Carousel from "./components/Carousel"
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
             <Route path={"/Contactanos"} element={<Contactanos />} />
             <Route path={"/Carrito"} element={<Carrito />} />
           </Routes>
+        <Carousel></Carousel>
         <Home></Home>
       </Router>
     </div>
