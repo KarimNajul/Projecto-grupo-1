@@ -140,5 +140,6 @@
       "price": 180,
       "image": "./image/Foto20.png"
     }
-  ]
+  ],
+  "carrito": []
 }

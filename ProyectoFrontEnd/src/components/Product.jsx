@@ -21,6 +21,10 @@ const Product = ({ product }) => {
     },
   };
 
+  const addToCart = (id) => {
+    console.log(id)
+  }
+
   return (
     <div className="flex flex-col border rounded-lg border border-solid border-2 border-white bg-amber-100 relative">
       <div>
@@ -48,7 +52,7 @@ const Product = ({ product }) => {
         className="text-white text-center drop-shadow-2xl	 
       border border-solid border-2 border-white rounded-md m-3.5 bg-yellow-500 hover:bg-black active:bg-green-800"
       >
-        <button>Agregar al carrito</button>
+        <button onClick={() => addToCart(productid)}>Agregar al carrito</button>
       </div>
       <Modal
         isOpen={modalIsOpen}
@@ -85,7 +89,7 @@ const Product = ({ product }) => {
           className="text-white text-center drop-shadow-2xl	 
             border border-solid border-2 border-white rounded-md m-3.5 bg-yellow-500 hover:bg-black active:bg-green-800"
         >
-          <button>Agregar al carrito</button>
+          <button onClick={() => addToCart(product.id)}>Agregar al carrito</button>
         </div>
       </Modal>
     </div>

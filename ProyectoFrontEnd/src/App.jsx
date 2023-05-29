@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import "./App.css";
 import NavBar from "./components/NavBar";
 import Carrito from "./pages/Carrito";
@@ -19,14 +19,17 @@ const slides = [
 function App() {
   return (
     <div className="">
+      <Router>
       <NavBar />
       <Routes>
         <Route path={"/"} element={<Inicio />} />
         <Route path={"/QuienesSomos"} element={<QuienesSomos />} />
         <Route path={"/Contactanos"} element={<Contactanos />} />
+        <Route path={"/Home"} element={<Home />} />
         <Route path={"/Carrito"} element={<Carrito />} />
       </Routes>
-      <Home></Home>
+      
+      </Router>
     </div>
   );
 }
