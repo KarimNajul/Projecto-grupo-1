@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { ProductContext } from "../context/ProductContext";
 import Product from "../components/Product";
+// import Carousel from "../components/Carousel"
 
 const Home = () => {
   const { products } = useContext(ProductContext);
