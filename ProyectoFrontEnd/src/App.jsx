@@ -14,16 +14,17 @@ function App() {
   return (
     <div className="">
       <Router>
-        <NavBar></NavBar>
-          <Carousel></Carousel>
-          <Routes>
-            <Route path={"/"} element={<Inicio />} />
-            <Route path={"/QuienesSomos"} element={<QuienesSomos />} />
-            <Route path={"/Contactanos"} element={<Contactanos />} />
-            <Route path={"/Carrito"} element={<Carrito />} />
-          </Routes>
-        <Home></Home>
-      </Router>
+      <NavBar />
+       <Carousel />    
+      <Routes>
+        <Route path={"/"} element={<Inicio />} />
+        <Route path={"/QuienesSomos"} element={<QuienesSomos />} />
+        <Route path={"/Contactanos"} element={<Contactanos />} />
+        <Route path={"/Home"} element={<Home />} />
+        <Route path={"/Carrito"} element={<Carrito />} />
+         </Router> 
+      </Routes>
+      
     </div>
   );
 }

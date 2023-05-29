@@ -16,8 +16,9 @@ const NavBar = () => {
     <nav className="bg-gray-400 py-6 relative">
       <div className="container mx-auto flex px-8 ">
         <div className="flex flex-grow">
-          <a href="#" className="text-black">
-            Logo
+          <a href="" className="text-black italic text-3xl">
+          <ion-icon name="logo-medium"></ion-icon>
+            MundoMueble
           </a>
         </div>
 
@@ -26,28 +27,28 @@ const NavBar = () => {
             <ion-icon name="menu-outline"></ion-icon>
           </button>
         </div>
-        <div className={`${open ? "open" : ""}`}>
+        <div className={`${open ? "block" : ""}`}>
           <div
             className={`${
               open ? "inline" : "hidden"
             } flex-grow justify-between absolute lg:relative lg:top-0 top-20 left-0 bg-gray-400 w-full lg:w-auto items-center py-14 lg:py-0 lg:inline `}
           >
             <div className="flex flex-col lg:flex-row text-center">
-              <Link to="/" className="text-white lg:mr-7 mb-8 lg:mb-0">
+              <Link to="/" className="text-white italic lg:mr-7 mb-8 lg:mb-0">
                 Inicio
               </Link>
               <Link
                 to="/Quienessomos"
-                className="text-white lg:mr-7 mb-8 lg:mb-0"
+                className="text-white italic lg:mr-7 mb-8 lg:mb-0"
               >
                 Quienes Somos
               </Link>
-              <Link to="/Productos" className="text-white lg:mr-7 mb-8 lg:mb-0">
+              <Link to="/Home" className="text-white italic lg:mr-7 mb-8 lg:mb-0">
                 Productos
               </Link>
               <Link
                 to="/Contactanos"
-                className="text-white lg:mr-7 mb-8 lg:mb-0"
+                className="text-white italic lg:mr-7 mb-8 lg:mb-0"
               >
                 Contactanos
               </Link>
@@ -55,7 +56,7 @@ const NavBar = () => {
           </div>
         </div>
         <div>
-          <Link to="/Carrito" className="text-xl text-black flex flex-row">
+          <Link to="/Carrito" className="text-2xl text-black flex flex-row">
             <ion-icon name="cart-outline" class=""></ion-icon>
           </Link>
         </div>
