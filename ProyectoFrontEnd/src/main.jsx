@@ -5,6 +5,7 @@ import "./index.css";
 import ProductProvider from "./context/ProductContext.jsx";
 
 import { BrowserRouter as Router } from "react-router-dom";
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Router>

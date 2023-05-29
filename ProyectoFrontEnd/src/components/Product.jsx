@@ -26,7 +26,7 @@ const Product = ({ product }) => {
   }
 
   return (
-    <div className="flex flex-col border rounded-lg border border-solid border-2 border-white bg-amber-100 relative">
+    <div className="flex flex-col rounded-lg border-solid border-2 border-white bg-amber-100 relative">
       <div>
         <div id="image" className="w-full mb-4 border rounded-lg">
           <img
@@ -44,13 +44,13 @@ const Product = ({ product }) => {
       </div>
       <div
         className="text-white text-center drop-shadow-2xl	 
-      border border-solid border-2 border-white rounded-md m-3.5 bg-yellow-500 hover:bg-black active:bg-green-800"
+      border-solid border-2 border-white rounded-md m-3.5 bg-yellow-500 hover:bg-black active:bg-green-800"
       >
         <button onClick={openModal}>Ver descripción</button>
       </div>
       <div
         className="text-white text-center drop-shadow-2xl	 
-      border border-solid border-2 border-white rounded-md m-3.5 bg-yellow-500 hover:bg-black active:bg-green-800"
+      border-solid border-2 border-white rounded-md m-3.5 bg-yellow-500 hover:bg-black active:bg-green-800"
       >
         <button onClick={() => addToCart(productid)}>Agregar al carrito</button>
       </div>
@@ -60,12 +60,12 @@ const Product = ({ product }) => {
         contentLabel="Descripción del producto"
         style={modalStyle}
         className={
-          "bg-amber-200 md:container md:mx-auto rounded-lg border border-solid border-2 border-white h-auto"
+          "bg-amber-200 md:container md:mx-auto rounded-lg border-solid border-2 border-white h-auto"
         }
       >
         <div className="text-right w-full justify-end">
           <button
-            className="text-white text-2xl drop-shadow-xl inline-block p-2 border border-solid border-2 border-white rounded-md m-3.5 bg-yellow-500 hover:bg-black"
+            className="text-white text-2xl drop-shadow-xl inline-block p-2 border-solid border-2 border-white rounded-md m-3.5 bg-yellow-500 hover:bg-black"
             onClick={closeModal}
           >
             X
@@ -87,7 +87,7 @@ const Product = ({ product }) => {
         </div>
         <div
           className="text-white text-center drop-shadow-2xl	 
-            border border-solid border-2 border-white rounded-md m-3.5 bg-yellow-500 hover:bg-black active:bg-green-800"
+             border-solid border-2 border-white rounded-md m-3.5 bg-yellow-500 hover:bg-black active:bg-green-800"
         >
           <button onClick={() => addToCart(product.id)}>Agregar al carrito</button>
         </div>
