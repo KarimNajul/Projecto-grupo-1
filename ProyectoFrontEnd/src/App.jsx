@@ -4,7 +4,6 @@ import Contactanos from "./pages/Contactanos";
 import Inicio from "./pages/Inicio";
 import QuienesSomos from "./pages/QuienesSomos";
 import Productos from "./pages/Productos.jsx";
-import Carousel from "./components/Carousel";
 import Footer from "./components/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
@@ -14,7 +13,6 @@ function App() {
     <div className="">
       <Router>
         <NavBar />
-        <Carousel />
         <Routes>
           <Route path={"/"} element={<Inicio />} />
           <Route path={"/QuienesSomos"} element={<QuienesSomos />} />

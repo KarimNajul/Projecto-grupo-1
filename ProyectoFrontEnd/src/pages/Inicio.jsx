@@ -1,5 +1,11 @@
+import Carousel from "../components/Carousel";
+
 const Inicio = () => {
-  return <div></div>;
+  return (
+    <div>
+      <Carousel></Carousel>
+    </div>
+  );
 };
 
 export default Inicio;
