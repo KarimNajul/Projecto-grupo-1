@@ -52,7 +52,9 @@ const Product = ({ product }) => {
         className="text-white text-center drop-shadow-2xl	 
       border-solid border-2 border-white rounded-md m-3.5 bg-yellow-500 hover:bg-black active:bg-green-800"
       >
-        <button onClick={() => addToCart(productid)}>Agregar al carrito</button>
+        <button onClick={() => addToCart(product.id)}>
+          Agregar al carrito
+        </button>
       </div>
       <Modal
         isOpen={modalIsOpen}
@@ -104,9 +106,7 @@ Product.propTypes = {
     image: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     price: PropTypes.string.isRequired,
-    product: PropTypes.shape({
-      id: PropTypes.string.isRequired,
-    }),
+    id: PropTypes.string.isRequired,
   }).isRequired,
 };
 
