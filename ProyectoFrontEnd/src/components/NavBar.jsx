@@ -17,7 +17,7 @@ const NavBar = () => {
       <div className="container mx-auto flex px-8 ">
         <div className="flex flex-grow">
           <a href="" className="text-black italic text-3xl">
-          <ion-icon name="logo-medium"></ion-icon>
+            <ion-icon name="logo-medium"></ion-icon>
             MundoMueble
           </a>
         </div>
@@ -43,7 +43,10 @@ const NavBar = () => {
               >
                 Quienes Somos
               </Link>
-              <Link to="/Home" className="text-white italic lg:mr-7 mb-8 lg:mb-0">
+              <Link
+                to="/Productos"
+                className="text-white italic lg:mr-7 mb-8 lg:mb-0"
+              >
                 Productos
               </Link>
               <Link

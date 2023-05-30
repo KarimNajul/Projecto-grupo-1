@@ -11,11 +11,10 @@ const QuienesSomos = () => {
       </p>
 
       <p className="text-black italic">
-        
         Su fundador, un joven Arquitecto, mantuvo desde sus inicios conceptos
-        fimres que lograr el éxito actual de MUNDO MUEBLE , con objetivos
-        claros a travez de la planificación estatégica y la implementación de
-        procesos eficaces como bases fundamentales de la organización.
+        fimres que lograr el éxito actual de MUNDO MUEBLE , con objetivos claros
+        a travez de la planificación estatégica y la implementación de procesos
+        eficaces como bases fundamentales de la organización.
       </p>
 
       <p className="text-black italic">

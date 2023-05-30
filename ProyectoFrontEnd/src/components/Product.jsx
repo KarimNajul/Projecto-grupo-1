@@ -22,8 +22,8 @@ const Product = ({ product }) => {
   };
 
   const addToCart = (id) => {
-    console.log(id)
-  }
+    console.log(id);
+  };
 
   return (
     <div className="flex flex-col rounded-lg border-solid border-2 border-white bg-amber-100 relative">
@@ -89,7 +89,9 @@ const Product = ({ product }) => {
           className="text-white text-center drop-shadow-2xl	 
              border-solid border-2 border-white rounded-md m-3.5 bg-yellow-500 hover:bg-black active:bg-green-800"
         >
-          <button onClick={() => addToCart(product.id)}>Agregar al carrito</button>
+          <button onClick={() => addToCart(product.id)}>
+            Agregar al carrito
+          </button>
         </div>
       </Modal>
     </div>
@@ -102,6 +104,9 @@ Product.propTypes = {
     image: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     price: PropTypes.string.isRequired,
+    product: PropTypes.shape({
+      id: PropTypes.string.isRequired,
+    }),
   }).isRequired,
 };
 

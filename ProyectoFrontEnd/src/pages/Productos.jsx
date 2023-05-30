@@ -3,7 +3,7 @@ import { ProductContext } from "../context/ProductContext";
 import Product from "../components/Product";
 // import Carousel from "../components/Carousel"
 
-const Home = () => {
+const Productos = () => {
   const { products } = useContext(ProductContext);
   return (
     <div>
@@ -18,4 +18,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Productos;
