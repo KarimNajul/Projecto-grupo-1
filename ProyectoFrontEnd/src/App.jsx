@@ -5,6 +5,7 @@ import Inicio from "./pages/Inicio";
 import QuienesSomos from "./pages/QuienesSomos";
 import Productos from "./pages/Productos.jsx";
 import Carousel from "./components/Carousel";
+import Footer from "./components/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 
@@ -22,6 +23,7 @@ function App() {
           <Route path={"/Carrito"} element={<Carrito />} />
         </Routes>
       </Router>
+      <Footer></Footer>
     </div>
   );
 }
