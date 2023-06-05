@@ -1,13 +1,12 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import PropTypes from "prop-types";
 import Modal from "react-modal";
 import CartContext from "../context/CartContext";
 
-Modal.setAppElement('#root');
-
+Modal.setAppElement("#root");
 
 const Product = ({ product }) => {
-  const { addToCart } = useContext (CartContext);
+  const { addToCart } = useContext(CartContext);
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const openModal = () => {

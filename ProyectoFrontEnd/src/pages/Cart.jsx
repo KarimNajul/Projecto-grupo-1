@@ -1,9 +1,8 @@
-import React,{ useContext, useState, useEffect } from "react";
+import { useContext, useState, useEffect } from "react";
 import Item from "../component-carrito/Item";
 import CartContext from "../context/CartContext";
 import { FaTimes } from "react-icons/fa";
 import Swal from "sweetalert2";
-
 
 const Cart = () => {
   const {
@@ -13,25 +12,25 @@ const Cart = () => {
     addOneFromCart,
     setIsShowing,
     updateState,
-  } = useContext (CartContext);
+  } = useContext(CartContext);
 
-      /*INICIO CART LOCAL STORAGE*/
+  /*INICIO CART LOCAL STORAGE*/
 
-      const [cartItems, setCartItems] = useState([]);
+  const [cartItems, setCartItems] = useState([]);
 
-      useEffect(() => {
-      // Obtener el carrito almacenado en localStorage al cargar el componente
-      const storedCart = localStorage.getItem('cart');
-      if (storedCart) {
+  useEffect(() => {
+    // Obtener el carrito almacenado en localStorage al cargar el componente
+    const storedCart = localStorage.getItem("cart");
+    if (storedCart) {
       setCartItems(JSON.parse(storedCart));
-      }
-      }, []);
-              
-      useEffect(() => {
-      // Almacenar el carrito en localStorage cada vez que cambie
-      localStorage.setItem('cart', JSON.stringify(cartItems));
-      }, [cartItems]);
-              
+    }
+  }, []);
+
+  useEffect(() => {
+    // Almacenar el carrito en localStorage cada vez que cambie
+    localStorage.setItem("cart", JSON.stringify(cartItems));
+  }, [cartItems]);
+
   /*FIN CART LOCAL STORAGE*/
 
   /* FUNCION PARA CALCULAR TOTAL*/
@@ -44,7 +43,7 @@ const Cart = () => {
     Swal.fire({
       position: "center",
       icon: "success",
-      title: "Your Payment was succesfull!",
+      title: "Su pago fue exitoso",
       theme: "dark",
       showConfirmButton: false,
       timer: 1500,
@@ -58,7 +57,7 @@ const Cart = () => {
             z-40 rounded-md border-[2px] border-first_color"
       >
         <FaTimes
-                  className="absolute text-white z-50 h-[10em] w-[1rem] top-[-3.5rem] right-[1rem] cursor-pointer"
+          className="absolute text-white z-50 h-[10em] w-[1rem] top-[-3.5rem] right-[1rem] cursor-pointer"
           onClick={() => {
             setIsShowing((isShowing) => !isShowing);
           }}
@@ -114,7 +113,6 @@ const Cart = () => {
       </div>
     </div>
   );
-}; 
-
+};
 
 export default Cart;

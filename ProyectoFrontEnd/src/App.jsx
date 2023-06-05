@@ -7,8 +7,7 @@ import Productos from "./pages/Productos.jsx";
 import Footer from "./components/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import CartContext from "./context/CartContext";
 import { FaShoppingCart } from "react-icons/fa";
 
@@ -49,7 +48,10 @@ const App = () => {
             ) : null}
 
             {isShowing && cart.length > 0 ? (
-              <Cart handleNothingInCart={handleNothingInCart} className="animate-spin" />
+              <Cart
+                handleNothingInCart={handleNothingInCart}
+                className="animate-spin"
+              />
             ) : nothingInCart ? (
               <div className="relative">
                 <div
@@ -58,7 +60,7 @@ const App = () => {
                 z-40 rounded-md border-[2px] border-first_color text-first_color font-bold text-[1.3rem] 
                 md:text-[1.7rem] lg:text-[2.1rem] grid place-items-center"
                 >
-                  No items found!
+                  Carrito vacio!
                 </div>
               </div>
             ) : null}
@@ -75,6 +77,6 @@ const App = () => {
       <Footer></Footer>
     </div>
   );
-}
+};
 
 export default App;
