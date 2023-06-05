@@ -60,7 +60,7 @@ const NavBar = () => {
         </div>
         <div>
           <Link to="/Cart" className="text-white italic lg:mr-7 mb-8 lg:mb-0">
-            Carrito
+             
           </Link>
         </div>
       </div>

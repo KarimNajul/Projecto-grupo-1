@@ -54,7 +54,7 @@ const Cart = () => {
   return (
     <div className="relative">
       <div
-        className="absolute px-[1rem] py-[1.5rem] md:px-[1.5rem] w-10/12 min-h-300p bg-cyan-800 mx-auto top-[12rem] left-1/2 transform -translate-x-1/2 
+        className="absolute px-[1rem] py-[1.5rem] md:px-[1.5rem] w-10/12 min-h-300p bg-gray-400  mx-auto top-[12rem] left-1/2 transform -translate-x-1/2 
             z-40 rounded-md border-[2px] border-first_color"
       >
         <FaTimes
@@ -88,7 +88,7 @@ const Cart = () => {
           </h5>
           <div className="flex flex-col items-center sm:flex-row justify-center col-span-6 gap-[3rem]">
             <button
-              className="bg-zinc-950 text-white hover:bg-first_color hover:text-red-500 font-bold hover:font-bold
+              className="bg-gray-700 text-white hover:bg-first_color hover:text-red-500 font-bold hover:font-bold
               p-2 px-4 flex items-center justify-center rounded-full active:border-2 active:border-black"
               onClick={() => {
                 clearCart();
@@ -98,7 +98,7 @@ const Cart = () => {
               Limpiar Carrito
             </button>
             <button
-              className="bg-zinc-950 text-white hover:bg-first_color hover:text-red-500 font-bold hover:font-bold
+              className="bg-gray-700 text-white hover:bg-first_color hover:text-red-500 font-bold hover:font-bold
               p-2 px-4 flex items-center justify-center rounded-full active:border-2 active:border-black"
               onClick={() => {
                 succesPay();
@@ -115,23 +115,6 @@ const Cart = () => {
     </div>
   );
 }; 
-//   return (
-//     <div>
-//       <h2>Carrito</h2>
-//       <div>
-//         {carrito.map((item) => (
-//           <Item key={item.id} data={item} deleteFromCart={deleteFromCart} />
-//         ))}
 
-//         <button
-//           onClick={() => clearCart()}
-//           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-//         >
-//           Limpiar Carrito
-//         </button>
-//       </div>
-//     </div>
-//   );
-// };
 
 export default Cart;
