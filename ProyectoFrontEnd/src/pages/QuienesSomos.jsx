@@ -1,6 +1,6 @@
 const QuienesSomos = () => {
   return (
-    <body className="mx-20 my-20 text-center">
+    <section className="mx-20 my-20 text-center">
       <h1 className="text-3xl my-5 text-gray-600 italic">NUESTRA EMPRESA</h1>
 
       <p className="text-black italic">
@@ -66,7 +66,7 @@ const QuienesSomos = () => {
         Ser una marca reconocida nacionalmente a travéz del diseño de
         mobiliarios funcionales e innovadores.
       </p>
-    </body>
+    </section>
   );
 };
 

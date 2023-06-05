@@ -1,8 +1,13 @@
-import { useState } from "react";
+import React, { useContext, useState } from "react";
 import PropTypes from "prop-types";
 import Modal from "react-modal";
+import CartContext from "../context/CartContext";
+
+Modal.setAppElement('#root');
+
 
 const Product = ({ product }) => {
+  const { addToCart } = useContext (CartContext);
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const openModal = () => {
@@ -19,10 +24,6 @@ const Product = ({ product }) => {
       height: "",
       margin: "auto",
     },
-  };
-
-  const addToCart = (id) => {
-    console.log(id);
   };
 
   return (
@@ -105,8 +106,8 @@ Product.propTypes = {
     name: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
-    price: PropTypes.string.isRequired,
-    id: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+    id: PropTypes.number.isRequired,
   }).isRequired,
 };
 

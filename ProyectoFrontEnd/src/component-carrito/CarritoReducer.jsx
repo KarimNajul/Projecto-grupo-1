@@ -1,72 +1,85 @@
+import { TYPES } from "./Action";
+
+
 export const carritoInitialState = {
-  productos: [],
-  carrito: [],
+  products: [],
+  cart: [],
 };
 
 export function carritoReducer(state, action) {
+  
   switch (action.type) {
     case TYPES.ADD_TO_CART: {
-      let nuevoItem = state.productos.find(
+      let nuevoItem = state.products.find(
         (producto) => producto.id === action.payload
       );
 
-      let itemEnCarrito = state.carrito.find(
-        (item) => item.id === action.payload
+      let itemEnCarrito = state.cart.find(
+        (item) => item.id === nuevoItem.id
       );
 
       return itemEnCarrito
         ? {
             ...state,
-            carrito: state.carrito.map((item) =>
-              item.id === nuevoItem
-                ? { ...item, cantidad: item.cantidad + 1 }
+            cart: state.cart.map((item) =>
+              item.id === itemEnCarrito.id
+                ? { ...item, quantity: item.quantity + 1 }
                 : item
             ),
           }
         : {
             ...state,
-            carrito: [...state.carrito, { ...nuevoItem, cantidad: 1 }],
+            cart: [...state.cart, { ...nuevoItem, quantity: 1 }],
           };
     }
 
+    case TYPES.ADD_ONE_FROM_CART: {
+      return {
+        ...state,
+        cart: state.cart.map (item => item.id === action.payload
+          ? { ...item, quantity: item.quantity + 1 } : item),
+      };
+    }
+
     case TYPES.REMOVE_ITEM: {
-      let itemAEliminar = state.carrito.find(
+      let itemAEliminar = state.cart.find(
         (item) => item.id === action.payload
       );
 
-      return itemAEliminar.cantidad > 1
+      return itemAEliminar.quantity > 1
         ? {
             ...state,
-            carrito: state.carrito.map((item) =>
-              item.id === itemAEliminar
-                ? { ...item, cantidad: item.cantidad - 1 }
+            cart: state.cart.map((item) =>
+              item.id === action.payload
+                ? { ...item, quantity: item.quantity - 1 }
                 : item
             ),
           }
         : {
             ...state,
-            carrito: state.carrito.filter(
-              (item) => item.id !== itemAEliminar.id
-            ),
+            cart: state.cart.filter(
+              (item) => item.id !== action.payload)
           };
     }
 
     case TYPES.REMOVE_ALL_ITEMS: {
-      let itemAEliminar = state.carrito.find(
-        (item) => item.id === action.payload
-      );
-
+      
       return {
         ...state,
-        carrito: state.carrito.filter((item) => item.id !== itemAEliminar.id),
+        cart: state.cart.filter((item) => item.id !== action.payload),
       };
     }
 
     case TYPES.CLEAR_CART: {
+      return carritoInitialState;
+    }
+
+    case TYPES.READ_STATE: {
       return {
         ...state,
-        carrito: [],
-      };
+        products: action.payload [0],
+        cart: action.payload [1]
+      }
     }
 
     default:

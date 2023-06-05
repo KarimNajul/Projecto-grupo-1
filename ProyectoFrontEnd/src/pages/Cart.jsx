@@ -1,0 +1,137 @@
+import React,{ useContext, useState, useEffect } from "react";
+import Item from "../component-carrito/Item";
+import CartContext from "../context/CartContext";
+import { FaTimes } from "react-icons/fa";
+import Swal from "sweetalert2";
+
+
+const Cart = () => {
+  const {
+    cart,
+    deleteFromCart,
+    clearCart,
+    addOneFromCart,
+    setIsShowing,
+    updateState,
+  } = useContext (CartContext);
+
+      /*INICIO CART LOCAL STORAGE*/
+
+      const [cartItems, setCartItems] = useState([]);
+
+      useEffect(() => {
+      // Obtener el carrito almacenado en localStorage al cargar el componente
+      const storedCart = localStorage.getItem('cart');
+      if (storedCart) {
+      setCartItems(JSON.parse(storedCart));
+      }
+      }, []);
+              
+      useEffect(() => {
+      // Almacenar el carrito en localStorage cada vez que cambie
+      localStorage.setItem('cart', JSON.stringify(cartItems));
+      }, [cartItems]);
+              
+  /*FIN CART LOCAL STORAGE*/
+
+  /* FUNCION PARA CALCULAR TOTAL*/
+  const totals = cart.reduce((acc, curr) => {
+    return acc + curr.quantity * curr.price;
+  }, 0);
+
+  /*FUNCION SWEETALERT - ES LLAMADA EN EL ONCLICK*/
+  const succesPay = () => {
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Your Payment was succesfull!",
+      theme: "dark",
+      showConfirmButton: false,
+      timer: 1500,
+    });
+  };
+
+  return (
+    <div className="relative">
+      <div
+        className="absolute px-[1rem] py-[1.5rem] md:px-[1.5rem] w-10/12 min-h-300p bg-cyan-800 mx-auto top-[12rem] left-1/2 transform -translate-x-1/2 
+            z-40 rounded-md border-[2px] border-first_color"
+      >
+        <FaTimes
+                  className="absolute text-white z-50 h-[10em] w-[1rem] top-[-3.5rem] right-[1rem] cursor-pointer"
+          onClick={() => {
+            setIsShowing((isShowing) => !isShowing);
+          }}
+        />
+
+        <h1 className="text-4xl text-center py-1 font-Roboto text-white mb-[1rem]">
+          Cart
+        </h1>
+
+        <div>
+          {cart.map((item) => {
+            return (
+              <Item
+                totals={totals}
+                key={item.id}
+                data={item}
+                deleteFromCart={deleteFromCart}
+                addOneFromCart={addOneFromCart}
+              />
+            );
+          })}
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 mx-8 text-center gap-2">
+          <h5 className="text-[1.7rem] text-first_color text-bold mb-[1rem] col-span-full text-center">
+            Total: $ {totals.toFixed(2)}
+          </h5>
+          <div className="flex flex-col items-center sm:flex-row justify-center col-span-6 gap-[3rem]">
+            <button
+              className="bg-zinc-950 text-white hover:bg-first_color hover:text-red-500 font-bold hover:font-bold
+              p-2 px-4 flex items-center justify-center rounded-full active:border-2 active:border-black"
+              onClick={() => {
+                clearCart();
+                updateState();
+              }}
+            >
+              Limpiar Carrito
+            </button>
+            <button
+              className="bg-zinc-950 text-white hover:bg-first_color hover:text-red-500 font-bold hover:font-bold
+              p-2 px-4 flex items-center justify-center rounded-full active:border-2 active:border-black"
+              onClick={() => {
+                succesPay();
+                setIsShowing((isShowing) => !isShowing);
+                clearCart();
+                updateState();
+              }}
+            >
+              Pagar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}; 
+//   return (
+//     <div>
+//       <h2>Carrito</h2>
+//       <div>
+//         {carrito.map((item) => (
+//           <Item key={item.id} data={item} deleteFromCart={deleteFromCart} />
+//         ))}
+
+//         <button
+//           onClick={() => clearCart()}
+//           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+//         >
+//           Limpiar Carrito
+//         </button>
+//       </div>
+//     </div>
+//   );
+// };
+
+export default Cart;
