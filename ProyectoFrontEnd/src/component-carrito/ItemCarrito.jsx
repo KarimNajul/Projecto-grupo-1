@@ -1,28 +1,13 @@
 import React from "react";
+import storeItems from "../data/products.json";
+import { Item } from "./Item";
 
-const ItemCarrito = (props) => {
-  const { data, deleteFromCart } = props;
-
+export const ItemList = () => {
   return (
-    <div>
-      <h4>{data.name}</h4>
-      <h5>$ {data.price}</h5>
-      <h5>{data.cantidad}</h5>
-      <h5>
-        Subtotal: $ {data.price} * {data.cantidad}
-      </h5>
-      <button
-        onClick={() => deleteFromCart(id, false)}
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-      >
-        Eliminar uno
-      </button>
-      <button
-        onClick={() => deleteFromCart(id, true)}
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-      >
-        Eliminar todos
-      </button>
+    <div className="items-list">
+      {storeItems.map((product, id) => {
+        return <Item key={product.id} {...product} />;
+      })}
     </div>
   );
 };

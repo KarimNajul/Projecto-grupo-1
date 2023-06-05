@@ -1,6 +1,6 @@
 const Contactanos = () => {
   return (
-    <body className="mx-20 my-20 text-center">
+    <section className="mx-20 my-20 text-center">
       <h1 className="text-3xl my-5 text-gray-600">CONTACTO</h1>
 
       <h2 className="my-3 text-black italic">
@@ -29,7 +29,7 @@ const Contactanos = () => {
         Local San Justo: Av. J. D. Perón 1098 - Villa Luzuriaga - Bs As -
         Argentina.
       </h2>
-    </body>
+    </section>
   );
 };
 

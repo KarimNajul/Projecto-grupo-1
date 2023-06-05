@@ -31,7 +31,7 @@ const NavBar = () => {
           <div
             className={`${
               open ? "inline" : "hidden"
-            } flex-grow justify-between absolute lg:relative lg:top-0 top-20 left-0 bg-gray-400 w-full lg:w-auto items-center py-14 lg:py-0 lg:inline `}
+            } flex-grow justify-between absolute lg:relative lg:top-0 top-20 left-0 bg-gray-400 w-full lg:w-auto items-center py-14 lg:py-0 lg:inline z-10 `}
           >
             <div className="flex flex-col lg:flex-row text-center">
               <Link to="/" className="text-white italic lg:mr-7 mb-8 lg:mb-0">
@@ -59,8 +59,8 @@ const NavBar = () => {
           </div>
         </div>
         <div>
-          <Link to="/Carrito" className="text-2xl text-black flex flex-row">
-            <ion-icon name="cart-outline" class=""></ion-icon>
+          <Link to="/Cart" className="text-white italic lg:mr-7 mb-8 lg:mb-0">
+            Carrito
           </Link>
         </div>
       </div>
