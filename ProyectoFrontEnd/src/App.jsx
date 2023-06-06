@@ -32,7 +32,7 @@ const App = () => {
         <div className="bg-gray-800">
           <div>
             <FaShoppingCart
-              className="h-[1.75rem] w-[1.75rem] absolute top-[1.3rem] right-[5.5rem] md:right-[4.8rem] z-20 text-white cursor-pointer"
+              className="h-[1.75rem] w-[1.75rem] absolute top-[1.3rem] right-[5.5rem] md:right-[4.8rem] z-30 text-white cursor-pointer"
               onClick={() => {
                 setIsShowing((isShowing) => !isShowing);
                 handleNothingInCart();
@@ -41,7 +41,7 @@ const App = () => {
 
             {cart.length > 0 ? (
               <div
-                className="h-[1.5rem] w-[1.5rem] absolute top-[0.7rem] right-[5.5rem] md:right-[3.9rem] z-20 
+                className="h-[1.5rem] w-[1.5rem] absolute top-[0.7rem] right-[5.5rem] md:right-[3.9rem] z-30 
             font-bold text-white text-center bg-red-500 rounded-full cursor-pointer"
               >
                 {cart.length}
