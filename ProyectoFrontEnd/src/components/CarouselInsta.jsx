@@ -27,7 +27,7 @@ const Instagram = () => {
     <section className= "bg-gray-100 font-sans text-sm min-h-screen min-w-screen">
       <div className="flex items-center justify-center py-4">
         <div className="border-t border-gray-400 flex-grow"></div>
-        <img src="/image/instagram (4).png" alt="" className="mx-4" />
+        <img src="/image/instagram.png" alt="" className="mx-4" />
         <div className="px-4 text-gray-600 text-4xl"> Instagram MundoMuebles</div>
         <div className="border-t border-gray-400 flex-grow"></div>
       </div>
