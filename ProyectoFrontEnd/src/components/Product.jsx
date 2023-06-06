@@ -23,7 +23,7 @@ const Product = ({ product }) => {
       height: "",
       margin: "auto",
     },
-    overlay: {zIndex: 1000}
+    overlay: { zIndex: 1000 },
   };
 
   return (
@@ -45,13 +45,13 @@ const Product = ({ product }) => {
       </div>
       <div
         className="text-white text-center italic drop-shadow-2xl	 
-      border-solid border-2 border-white rounded-md m-3.5 bg-gray-700 hover:bg-black active:bg-green-800"
+        border-solid border-2 border-white rounded-md m-3.5 bg-gray-700 hover:bg-black active:bg-green-800"
       >
         <button onClick={openModal}>Ver descripción</button>
       </div>
       <div
         className="text-white text-center italic drop-shadow-2xl	 
-      border-solid border-2 border-white rounded-md m-3.5 bg-gray-700 hover:bg-black active:bg-green-800"
+        border-solid border-2 border-white rounded-md m-3.5 bg-gray-700 hover:bg-black active:bg-green-800"
       >
         <button onClick={() => addToCart(product.id)}>
           Agregar al carrito
@@ -63,7 +63,7 @@ const Product = ({ product }) => {
         contentLabel="Descripción del producto"
         style={modalStyle}
         className={
-          "bg-gray-400 md:container md:mx-auto rounded-lg border-solid border-2 border-white h-auto"
+          "bg-gray-400 mx-4 md:mx-auto rounded-lg border-solid border-2 border-white"
         }
       >
         <div className="text-right w-full justify-end">
@@ -79,18 +79,22 @@ const Product = ({ product }) => {
             {product.name}
           </h1>
           <div className="flex justify-center items-center">
-            <img className="h-64 w-64" src={product.image} alt={product.name} />
+            <img
+              className="h-64 w-64 md:h-80 md:w-80"
+              src={product.image}
+              alt={product.name}
+            />
           </div>
           <h2 className="text-black italic text-center text-lg underline underline-offset-2">
             Descripción
           </h2>
-          <p className="text-black italic text-base text-center">
+          <p className="text-black italic text-base text-center px-4">
             {product.description}
           </p>
         </div>
         <div
           className="text-white italic text-center drop-shadow-2xl	 
-             border-solid border-2 border-white rounded-md m-3.5 bg-gray-700 hover:bg-black active:bg-green-800"
+          border-solid border-2 border-white rounded-md m-3.5 bg-gray-700 hover:bg-black active:bg-green-800"
         >
           <button onClick={() => addToCart(product.id)}>
             Agregar al carrito
