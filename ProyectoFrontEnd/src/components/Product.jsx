@@ -23,6 +23,7 @@ const Product = ({ product }) => {
       height: "",
       margin: "auto",
     },
+    overlay: {zIndex: 1000}
   };
 
   return (
@@ -62,7 +63,7 @@ const Product = ({ product }) => {
         contentLabel="Descripción del producto"
         style={modalStyle}
         className={
-          "bg-gray-400 md:container md:mx-auto rounded-lg border-solid border-2 border-white h-auto z-50"
+          "bg-gray-400 md:container md:mx-auto rounded-lg border-solid border-2 border-white h-auto"
         }
       >
         <div className="text-right w-full justify-end">

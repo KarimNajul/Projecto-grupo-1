@@ -13,7 +13,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="bg-gray-400 py-6 relative z-0">
+    <nav className="bg-gray-400 py-6 relative z-10">
       <div className="container mx-auto flex px-8 ">
         <div className="flex flex-grow">
           <a href="" className="text-black italic text-3xl">
