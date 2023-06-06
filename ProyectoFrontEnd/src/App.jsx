@@ -10,7 +10,7 @@ import "./App.css";
 import { useContext, useState } from "react";
 import CartContext from "./context/CartContext";
 import { FaShoppingCart } from "react-icons/fa";
-import  Instagram from "./components/CarouselInsta";
+
 
 const App = () => {
   const { cart, isShowing, setIsShowing } = useContext(CartContext);
@@ -58,7 +58,7 @@ const App = () => {
                 <div
                   className="absolute w-[13rem] h-[8rem] md:w-[15rem] md:h-[9rem] lg:w-[20rem] 
                 lg:h-[11rem] bg-zinc-800 mx-auto top-[10rem] left-1/2 transform -translate-x-1/2 
-                z-40 rounded-md border-[2px] border-first_color text-first_color font-bold text-[1.3rem] 
+                z-40 rounded-md border-[2px] border-first_color text-first_color italic font-bold text-[1.3rem] 
                 md:text-[1.7rem] lg:text-[2.1rem] grid place-items-center"
                 >
                   Carrito vacio!
@@ -75,7 +75,7 @@ const App = () => {
           <Route path={"/Cart"} element={<Cart />} />
         </Routes>
       </Router>
-      <Instagram/>
+      
       <Footer />
     </div>
   );

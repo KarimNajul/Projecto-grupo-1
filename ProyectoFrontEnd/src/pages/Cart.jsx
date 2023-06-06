@@ -63,8 +63,8 @@ const Cart = () => {
           }}
         />
 
-        <h1 className="text-4xl text-center py-1 font-Roboto text-white mb-[1rem]">
-          Cart
+        <h1 className="text-4xl italic text-center py-1 font-Roboto text-white mb-[1rem]">
+          Carrito
         </h1>
 
         <div>
@@ -82,12 +82,12 @@ const Cart = () => {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 mx-8 text-center gap-2">
-          <h5 className="text-[1.7rem] text-first_color text-bold mb-[1rem] col-span-full text-center">
+          <h5 className="text-[1.7rem] italic text-first_color text-bold mb-[1rem] col-span-full text-center">
             Total: $ {totals.toFixed(2)}
           </h5>
           <div className="flex flex-col items-center sm:flex-row justify-center col-span-6 gap-[3rem]">
             <button
-              className="bg-gray-700 text-white hover:bg-first_color hover:text-red-500 font-bold hover:font-bold
+              className="bg-gray-700 text-white italic hover:bg-first_color hover:text-red-500 font-bold hover:font-bold
               p-2 px-4 flex items-center justify-center rounded-full active:border-2 active:border-black"
               onClick={() => {
                 clearCart();
@@ -97,7 +97,7 @@ const Cart = () => {
               Limpiar Carrito
             </button>
             <button
-              className="bg-gray-700 text-white hover:bg-first_color hover:text-red-500 font-bold hover:font-bold
+              className="bg-gray-700 text-white italic hover:bg-first_color hover:text-red-500 font-bold hover:font-bold
               p-2 px-4 flex items-center justify-center rounded-full active:border-2 active:border-black"
               onClick={() => {
                 succesPay();
