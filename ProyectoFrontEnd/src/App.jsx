@@ -10,6 +10,7 @@ import "./App.css";
 import { useContext, useState } from "react";
 import CartContext from "./context/CartContext";
 import { FaShoppingCart } from "react-icons/fa";
+import  Instagram from "./components/CarouselInsta";
 
 const App = () => {
   const { cart, isShowing, setIsShowing } = useContext(CartContext);
@@ -74,7 +75,8 @@ const App = () => {
           <Route path={"/Cart"} element={<Cart />} />
         </Routes>
       </Router>
-      <Footer></Footer>
+      <Instagram/>
+      <Footer />
     </div>
   );
 };
