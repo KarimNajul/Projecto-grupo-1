@@ -24,7 +24,7 @@ const slides = [
 
 const Instagram = () => {
   return (
-    <section className= "bg-gray-100 font-sans text-sm min-h-screen min-w-screen">
+    <section className= "bg-gray-100 font-sans text-sm min-h-screen min-w-screen container mx-auto relative z-0">
       <div className="flex items-center justify-center py-4">
         <div className="border-t border-gray-400 flex-grow"></div>
         <img src="/image/instagram (4).png" alt="" className="mx-4" />

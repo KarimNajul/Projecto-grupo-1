@@ -32,7 +32,7 @@ const App = () => {
         <div className="bg-gray-800">
           <div>
             <FaShoppingCart
-              className="h-[1.75rem] w-[1.75rem] absolute top-[1.3rem] right-[5.5rem] md:right-[4.8rem] z-50 text-white cursor-pointer"
+              className="h-[1.75rem] w-[1.75rem] absolute top-[1.3rem] right-[5.5rem] md:right-[4.8rem] z-20 text-white cursor-pointer"
               onClick={() => {
                 setIsShowing((isShowing) => !isShowing);
                 handleNothingInCart();
@@ -41,7 +41,7 @@ const App = () => {
 
             {cart.length > 0 ? (
               <div
-                className="h-[1.5rem] w-[1.5rem] absolute top-[0.7rem] right-[5.5rem] md:right-[3.9rem] z-50 
+                className="h-[1.5rem] w-[1.5rem] absolute top-[0.7rem] right-[5.5rem] md:right-[3.9rem] z-20 
             font-bold text-white text-center bg-red-500 rounded-full cursor-pointer"
               >
                 {cart.length}
@@ -58,7 +58,7 @@ const App = () => {
                 <div
                   className="absolute w-[13rem] h-[8rem] md:w-[15rem] md:h-[9rem] lg:w-[20rem] 
                 lg:h-[11rem] bg-zinc-800 mx-auto top-[10rem] left-1/2 transform -translate-x-1/2 
-                z-40 rounded-md border-[2px] border-first_color text-first_color italic font-bold text-[1.3rem] 
+                z-30 rounded-md border-[2px] border-first_color text-white italic font-bold text-[1.3rem] 
                 md:text-[1.7rem] lg:text-[2.1rem] grid place-items-center"
                 >
                   Carrito vacio!
