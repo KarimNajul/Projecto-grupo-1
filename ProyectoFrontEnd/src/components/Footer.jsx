@@ -1,8 +1,3 @@
-import whatsapp from '../../public/image/logo_whatsapp.svg';
-import telefono from '../../public/image/telefono.svg';
-import ubicacion from '../../public/image/Ubicacion.svg';
-import tarjeta from '../../public/image/tarjetas.png';
-
 export default function Footer ()  {
 
     return (
@@ -29,10 +24,10 @@ export default function Footer ()  {
 
                 <div className='m-5 italic text-center lg:text-left'> 
                     <p className="font-bold text-lg"> Contactanos</p>
-                    <p className="text-sm mt-4 flex justify-center lg:justify-start"><img src={whatsapp} alt="whatsapp" className='w-5 h-5' />  <span className='ml-2'>11 4444 5555</span></p>
-                    <p className="text-sm mt-2 flex justify-center lg:justify-start"><img src={telefono} alt="telefono" className='w-5 h-5' />  <span className='ml-2'>11 8888 9999</span></p>
-                    <p className="text-sm mt-2 flex justify-center lg:justify-start"><img src={ubicacion} alt="ubicacion" className='w-6 h-6' />  <span className='ml-2'>Local Belgrano: Amenábar 1991 - CABA - Bs As - Argentina.</span></p>
-                    <p className="text-sm mt-2 flex justify-center lg:justify-start"><img src={ubicacion} alt="ubicacion" className='w-6 h-6' />  <span className='ml-2'>Local San Justo: Av. J. D. Perón 1098 - Villa Luzuriaga - Bs As -
+                    <p className="text-sm mt-4 flex justify-center lg:justify-start"><img src= "./image/logo_whatsapp.svg" alt="whatsapp" className='w-5 h-5' />  <span className='ml-2'>11 4444 5555</span></p>
+                    <p className="text-sm mt-2 flex justify-center lg:justify-start"><img src= "./image/telefono.svg" alt="telefono" className='w-5 h-5' />  <span className='ml-2'>11 8888 9999</span></p>
+                    <p className="text-sm mt-2 flex justify-center lg:justify-start"><img src= "./image/Ubicacion.svg" alt="ubicacion" className='w-6 h-6' />  <span className='ml-2'>Local Belgrano: Amenábar 1991 - CABA - Bs As - Argentina.</span></p>
+                    <p className="text-sm mt-2 flex justify-center lg:justify-start"><img src= "./image/Ubicacion.svg" alt="ubicacion" className='w-6 h-6' />  <span className='ml-2'>Local San Justo: Av. J. D. Perón 1098 - Villa Luzuriaga - Bs As -
         Argentina.</span></p>
                 </div>
             </div>
@@ -40,7 +35,7 @@ export default function Footer ()  {
             <div>
                 <div className='m-5 italic text-center lg:text-left flex justify-center'>
                     <p className="font-bold lg:text-lg">Medios de pago</p>
-                    <img src={tarjeta} className='ml-4' style={{width: '250px'}} alt="tarjetas" />
+                    <img src= "./image/tarjetas.png" className='ml-4' style={{width: '250px'}} alt="tarjetas" />
                 </div>
             </div>
         </div>

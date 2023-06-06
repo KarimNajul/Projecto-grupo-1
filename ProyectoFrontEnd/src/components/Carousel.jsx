@@ -33,9 +33,9 @@ const Carrusel = () => {
         <SwiperSlide>
           <div className="flex items-center justify-center h-96">
             <img
-              src="./image/Banner1.png"
+              src="./image/Banner9.png"
               alt="Slide 1"
-              className="h-64 w-64 object-cover"
+              className="object-cover"
             />
           </div>
         </SwiperSlide>
@@ -52,7 +52,7 @@ const Carrusel = () => {
           <div className="flex items-center justify-center h-96">
             <img
               src="./image/Banner3.png"
-              alt="Slide 1"
+              alt="Slide 3"
               className="object-cover"
             />
           </div>
@@ -61,7 +61,7 @@ const Carrusel = () => {
           <div className="flex items-center justify-center h-96">
             <img
               src="./image/Banner4.png"
-              alt="Slide 1"
+              alt="Slide 4"
               className="object-cover"
             />
           </div>
@@ -70,7 +70,7 @@ const Carrusel = () => {
           <div className="flex items-center justify-center h-96">
             <img
               src="./image/Banner5.png"
-              alt="Slide 1"
+              alt="Slide 5"
               className="object-cover"
             />
           </div>
@@ -79,20 +79,20 @@ const Carrusel = () => {
           <div className="flex items-center justify-center h-96">
             <img
               src="./image/Banner6.png"
-              alt="Slide 1"
+              alt="Slide 6"
               className="object-cover"
             />
           </div>
         </SwiperSlide>
-        {/* <SwiperSlide>
+        <SwiperSlide>
         <div className="flex items-center justify-center h-96">
           <img
-            src= "./image/Banner7.png"
-            alt="Slide 1"
-            className="w-full h-64 shadow-xl object-cover"
+            src= "./image/Banner8.png"
+            alt="Slide 7"
+            className= "object-cover"
           />
         </div>
-        </SwiperSlide> */}
+        </SwiperSlide>
       </Swiper>
     </div>
   );
